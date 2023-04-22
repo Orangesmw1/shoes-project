@@ -1,0 +1,21 @@
+.features-title {
+    font-size: 5.5rem;
+    padding-left: 20px;
+    font-weight: bold;
+
+    position: relative;
+
+    color: rgba(128, 128, 128, 0.351);
+}
+
+.features-title-up {
+    position: absolute;
+    top: 43%;
+    left: 16px;
+    z-index: 100;
+
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: black;
+    text-transform: uppercase;
+}

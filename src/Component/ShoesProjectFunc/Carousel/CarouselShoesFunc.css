@@ -1,0 +1,69 @@
+.carousel {
+    background-color: rgba(248, 107, 55, 0.953);
+
+    overflow: hidden;
+
+    margin-bottom: 40px;
+}
+
+.ant-carousel .slick-dots li button {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+
+.carousel-box {
+   
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right;
+
+    
+    width: 90% !important;
+    height: 450px;
+
+    position: relative;
+}
+
+
+.content-box {
+    position: absolute;
+    top: 15%;
+    left: 14%;
+}
+
+.name-product-carousel {
+    font-size: 3rem;
+    font-weight: bold;
+
+    color: white;
+}
+
+.line-title {
+    width: 150px;
+    height: 5px;
+    margin-bottom: 20px;
+
+    display: block;
+    background-color: white;
+}
+
+.description {
+    font-size: 1rem;
+    font-weight: 500;
+    color: white;
+    padding-right: 100px;
+    
+    width: 600px;
+    
+    padding-bottom: 15px;
+}
+
+.content-box button {
+    border-radius: 50px;
+    padding: 10px 20px;
+
+    font-weight: bold;
+
+}
+

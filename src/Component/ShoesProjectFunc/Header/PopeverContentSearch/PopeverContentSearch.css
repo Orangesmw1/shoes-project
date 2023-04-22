@@ -1,0 +1,29 @@
+.pop-search {
+    width: 100%;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    list-style: none;
+
+    border-bottom: 1px solid gainsboro;
+}
+
+.pop-search:hover {
+    background-color: rgba(88, 145, 215, 0.566);
+    color: white;
+    cursor: pointer;
+}
+
+.img-search {
+    width: 30%;
+}
+
+.name-search {
+    width: 70%;
+    text-align: left;
+    padding-left: 20px;
+    font-weight: 600;
+
+}

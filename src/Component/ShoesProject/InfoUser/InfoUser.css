@@ -1,0 +1,52 @@
+.infoUser {
+    height: 100vh;
+    overflow: hidden;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.infoUser .card {
+    height: 70%;
+    width: 70%;
+
+    border: 4px dashed gray;
+    
+    display: block;
+    overflow: hidden;
+
+    
+
+}
+.no-gutterss {
+    width: 100%;
+    height: 100% !important ; 
+
+}
+
+.infoUser .img-User {
+    width: 100%;
+    height: 100%;
+    background-image: url(../../../assist/image/ShoesProject/imgUser.jpg);
+    background-size: cover;
+    background-position: center;
+
+}
+
+.infoUser .card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    height: 60%;
+}
+
+.card-body .card-title {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.card-body .box-account {
+    font-size: 1.2rem;
+}

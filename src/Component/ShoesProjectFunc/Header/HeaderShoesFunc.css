@@ -1,0 +1,114 @@
+.headerShoesFunc {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    height: 75px;
+    width: 100%;
+
+}
+
+.logo-box {
+    height: 100%;
+    width: 30%;
+    
+    display: flex;
+    align-items: center;
+}
+
+.logo-img {
+    width: 150px;
+
+    object-fit: cover;
+}
+
+.category-box {
+    height: 100%;
+    width: 40%;
+
+    display: flex;
+    align-items: center;
+
+    font-size: 0.9rem;
+    font-weight: 600;
+
+}
+
+.category-box ul {
+    margin: 0;
+    padding: 0;
+
+}
+
+.category-box ul li {
+    display: inline;
+
+    padding: 0 10px
+}
+
+.category-box ul li:first-child {
+    background-color: rgba(248, 107, 55, 0.553);
+    padding: 5px 10px;
+    border-radius: 20px;
+    color: white;
+}
+
+.search-cart {
+
+    display: flex;
+    align-items: center;
+
+}
+
+.search-cart form {
+    position: relative;
+
+}
+
+
+
+.search-header {
+    border-radius: 20px;
+    border: none !important;
+    
+    background-color: rgba(209, 203, 203, 0.488);
+    padding: 5px 20px;
+
+    font-size: 1rem;
+    overflow: none;
+}
+
+.search-header::placeholder {
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+
+.search-header:focus{
+    outline-style: none !important;
+    border: none !important;
+}   
+
+.search-cart .btn-searchh {
+    position: absolute;
+    top: 5px;
+    right: 8px;
+
+    border: none;
+    background-color: transparent;
+}
+
+.search-cart .btn-searchh:focus{
+    color: blueviolet;
+}
+    
+.search-cart .fa-search {
+    font-size: 1rem;
+    overflow: none !important;
+}
+
+.cart {
+    padding-left: 20px;
+    font-size: 1.2rem;
+}
+

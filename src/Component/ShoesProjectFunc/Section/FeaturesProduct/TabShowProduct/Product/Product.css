@@ -1,0 +1,118 @@
+.product {
+    width: 100%;
+    margin: 0 ;
+}
+
+.card.col-4 {
+    padding: 0 30px;
+    border: none;
+    
+    height: 380px;
+}
+
+.box-img-card {
+    width: 100%;
+    background-color: gainsboro;
+
+    text-align: center;
+}
+
+.box-img-card img {
+    object-fit: cover;
+    width: 100%;
+    height: 250px;
+}
+
+.card.col-4:hover .product-related {
+    height: 80px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid gray;
+
+}
+
+.product-related {
+    height:0;
+
+    
+    transition: 0.3s ease-out;
+
+   
+
+}
+
+
+
+.product-related ul {
+    width: 100%;
+    height: 100%;
+    margin-top: 8px ;
+
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.product-related ul li {
+    background-color: gainsboro;
+    border-radius: 20px;
+
+    display: inline-block;
+}
+
+.product-related ul li img {
+    width: 100% !important;
+    height: 100% !important;
+}
+
+.box-card-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 0 10px;
+
+    color: rgb(101, 101, 101);
+
+
+}
+
+.content-card {
+    font-size: 0.9rem;
+
+}
+.content-card h5 {
+    color: rgb(61, 60, 60);
+
+    padding-top: 10px;
+    margin: 0;
+
+    font-size: 0.9rem;
+
+}
+
+.content-card p {
+    padding-right: 20px;
+
+    width: 185px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.box-price button {
+    border-radius: 50%;
+    padding: 5px 10px;
+}
+
+.price-card {
+    font-size: 1.1rem;
+    font-weight: 500;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+
+
+
+
+
