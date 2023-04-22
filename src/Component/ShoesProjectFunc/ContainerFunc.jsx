@@ -1,12 +1,10 @@
 import React, { useEffect, useState } from "react";
-import CarouselShoesFunc from "./Carousel/CarouselShoesFunc";
-import SectionShoesFunc from "./Section/SectionShoesFunc";
 import axios from "axios";
-
-import { ToastContainer, toast } from "react-toastify";
+import HeaderShoesFunc from "./Header/HeaderShoesFunc";
+import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
-const ShoesProjectFunc = () => {
+const ContainerFunc = ({ children }) => {
   const [listShoesProduct, setListShoesProduct] = useState([]);
   const [listProductCart, setListProductCart] = useState([]);
 
@@ -76,11 +74,15 @@ const ShoesProjectFunc = () => {
 
   return (
     <div>
-      <CarouselShoesFunc listShoesProduct={listShoesProduct} />
-      <SectionShoesFunc listShoesProduct={listShoesProduct} handleAddCart={handleAddCart} />
-      <ToastContainer />;
+      <HeaderShoesFunc
+        listProductCart={listProductCart}
+        handleAddCart={handleAddCart}
+        listShoesProduct={listShoesProduct}
+      />
+
+      {children}
     </div>
   );
 };
 
-export default ShoesProjectFunc;
+export default ContainerFunc;

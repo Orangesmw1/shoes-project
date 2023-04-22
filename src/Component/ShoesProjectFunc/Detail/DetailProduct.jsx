@@ -1,12 +1,29 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./DetailProduct.css";
-import HeaderShoesFunc from "../Header/HeaderShoesFunc";
+import { useParams } from "react-router-dom";
+import axios from "axios";
 
-const DetailProduct = (props) => {
+const DetailProduct = () => {
+  const param = useParams();
+  const id = param.id;
+
+  const [itemProduct, setItemProduct] = useState(null);
+
+  useEffect(() => {
+    axios({
+      method: "get",
+      url: `https://shop.cyberlearn.vn/api/Product/getbyid?id=${id}`
+    }).then((response) => {
+      if (response) {
+        setItemProduct(response.data.content);
+      }
+    });
+  }, []);
+
+  console.log("itemProduct", itemProduct);
+
   return (
     <div>
-      {/* <HeaderShoesFunc /> */}
-
       <div className="detail-product container ">
         <h2 className="detail-title">
           FEATURES
