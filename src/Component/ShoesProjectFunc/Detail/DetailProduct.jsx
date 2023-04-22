@@ -5,6 +5,7 @@ import axios from "axios";
 
 const DetailProduct = () => {
   const [itemProduct, setItemProduct] = useState(null);
+  const [newID, setNewID] = useState(0);
 
   const param = useParams();
   const id = param.id;
