@@ -17,6 +17,11 @@ const ContainerFunc = ({ children }) => {
         setListShoesProduct(response.data.content);
       }
     });
+
+    const listCartLocal = JSON.parse(localStorage.getItem("listCart"));
+    if (listCartLocal) {
+      setListProductCart(listCartLocal);
+    }
   }, []);
 
   const notify = (type) => {

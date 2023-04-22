@@ -18,7 +18,7 @@ const CarouselItemFunc = (props) => {
         <span className="line-title"></span>
         <p className="description">{item.description}</p>
 
-        <NavLink to="/product">
+        <NavLink to={`/product/${item.id}`}>
           <button className="btn btn-success">PURCHASE NOW</button>
         </NavLink>
       </animated.div>

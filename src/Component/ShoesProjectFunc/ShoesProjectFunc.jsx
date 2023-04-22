@@ -47,6 +47,12 @@ const ShoesProjectFunc = () => {
     }
   };
 
+  useEffect(() => {
+    if (listProductCart.length > 0) {
+      localStorage.setItem("listCart", JSON.stringify(listProductCart));
+    }
+  }, [listProductCart]);
+
   const handleAddCart = (item, minus) => {
     const isMinus = minus ? minus : null;
 

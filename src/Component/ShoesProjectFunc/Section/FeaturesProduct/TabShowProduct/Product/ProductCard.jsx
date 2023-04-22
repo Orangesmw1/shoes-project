@@ -1,4 +1,5 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 
 const ProductCard = (props) => {
   const { itemCard, listShoesProduct, handleAddCart } = props;
@@ -21,7 +22,9 @@ const ProductCard = (props) => {
       return arrRelated.map((item) => {
         return (
           <li key={item.id}>
-            <img src={item.image} alt="" />
+            <NavLink to={`/product/${item.id}`}>
+              <img src={item.image} alt="" />
+            </NavLink>
           </li>
         );
       });
@@ -31,7 +34,9 @@ const ProductCard = (props) => {
   return (
     <div className="card col-4">
       <div className="box-img-card">
-        <img src={itemCard.image} alt="" />
+        <NavLink to={`/product/${itemCard.id}`}>
+          <img src={itemCard.image} alt="" />
+        </NavLink>
       </div>
 
       <div className="product-related">

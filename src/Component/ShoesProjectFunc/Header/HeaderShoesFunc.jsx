@@ -4,6 +4,7 @@ import "./HeaderShoesFunc.css";
 import ModalCart from "./ModalCart/ModalCart";
 import { Popover } from "antd";
 import PopeverContentSearch from "./PopeverContentSearch/PopeverContentSearch";
+import { NavLink } from "react-router-dom";
 
 const HeaderShoesFunc = (props) => {
   const { listProductCart, handleAddCart, listShoesProduct } = props;
@@ -30,7 +31,9 @@ const HeaderShoesFunc = (props) => {
   return (
     <div className="headerShoesFunc container">
       <div className="logo-box">
-        <img src={logo} className="logo-img" alt="" />
+        <NavLink to={"/"}>
+          <img src={logo} className="logo-img" alt="" />
+        </NavLink>
       </div>
 
       <nav className="category-box">

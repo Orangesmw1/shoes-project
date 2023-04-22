@@ -19,7 +19,7 @@ function App() {
           />
 
           <Route
-            path="/product"
+            path="/product/:id"
             element={
               <ContainerFunc>
                 <DetailProduct />
